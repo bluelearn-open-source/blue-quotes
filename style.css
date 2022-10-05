@@ -1,66 +1,75 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-/* 
+
 * {
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
 }
 
-} */
 
 
 html {
-
   font-size: 62.5%;
 }
 
 body {
-  background-color: rgb(238, 238, 238);
+  background-color: #dcdee6;
   font-family: "Poppins", sans-serif;
   justify-content: center;
   align-items: center;
   /* min-height: 100vh; */
   overflow-x: hidden;
 }
-.navbar{
+
+.navbar {
   width: 100%;
   height: 75px;
-  background-color: #dcdee6;
+  background-color: rgb(238, 238, 238);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
-  z-index: 10;
- box-shadow: 0px 0px 5px 1px;
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 10; */
+  box-shadow: 0px 0px 5px rgb(185, 185, 185);
 
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-.leftNav{
+.sticky+.container {
+  padding-top: 60px;
+}
+
+/* 
+.leftNav {
   flex: 1;
 
 }
-.right{
-  flex:1;
+
+.right {
+  flex: 1;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+} */
 
-  
-}
-.box{
-  width: 100px;
+.box {
+  width: 10rem;
   background-color: #2e2f30;
   border-radius: 20px;
-  margin-right  : 20px;
+  margin-right: 10rem;
   position: relative;
   cursor: pointer;
   box-shadow: 0px 0px 7px 1px;
 
 }
-.moon{
+
+.moon {
   width: 40px;
   height: 40px;
   display: flex;
@@ -70,7 +79,8 @@ body {
   /* visibility: hidden; */
   /* background-color: #0d0d0d; */
 }
-.sun{
+
+.sun {
   width: 40px;
   height: 40px;
   display: flex;
@@ -80,43 +90,54 @@ body {
   margin-top: -40px;
   visibility: hidden;
 }
-.dark-text{
-  margin-left: 8px;
-  font-size: 15px;
-}
-.light-text{
-  margin-left: 11px;
-  font-size: 15px;
-  color: #0d0d0d;
 
+.dark-text {
+  margin-left: 8px;
+  font-size: 12px;
+  line-height: 1.5rem;
 }
-.dark-mode{
+
+.light-text {
+  margin-left: 11px;
+  font-size: 12px;
+  color: #0d0d0d;
+  line-height: 1.5rem;
+}
+
+.dark-mode {
   width: 100%;
   height: 100%;
 }
-.light-mode{
+
+.light-mode {
   width: 100%;
   height: 100%;
   margin-left: 15px;
 }
-.logo{
-  margin-left: 20px;
-  font-size: 30px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+.logo {
+  margin-left: 9.5rem;
 }
-.header{
-  margin-top:10em;
 
 .header {
   margin-top: 10em;
-
 }
-.main{
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.main {
   margin-top: 100px;
 }
+
 .grid {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-item {
@@ -130,8 +151,8 @@ body {
   width: 100%;
   height: 20rem;
   object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   overflow: hidden;
 }
 
@@ -142,13 +163,16 @@ body {
   cursor: pointer;
   background-color: #fff;
   flex: 0 0 100%;
-  /* height: 100%; */
+  height: 100%;
+  overflow: hidden;
 }
-.card:hover {
-  transform: translateY(-0.5%);
 
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.card:hover {
+  transform: translateY(-0.5);
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
 }
+
 .card-content {
   padding: 3rem;
   display: flex;
@@ -156,10 +180,12 @@ body {
   justify-content: space-between;
   min-height: 230px;
 }
+
 .card-content h3 {
   margin-top: -10px;
   text-align: right;
   margin-bottom: 20px;
+  user-select: none;
 }
 
 .card-header {
@@ -172,9 +198,7 @@ body {
 .card-text {
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
-  line-height: 1.7;
   color: #3d3d3d;
-  margin-bottom: 2.5rem;
 }
 
 .card-btn {
@@ -185,13 +209,11 @@ body {
   text-align: center;
   color: white;
   background: rgb(30, 76, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(30, 76, 255, 1) 0%,
-    rgba(179, 23, 240, 1) 25%,
-    rgba(17, 170, 255, 1) 82%,
-    rgba(0, 77, 238, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(30, 76, 255, 1) 0%,
+      rgba(179, 23, 240, 1) 25%,
+      rgba(17, 170, 255, 1) 82%,
+      rgba(0, 77, 238, 1) 100%);
   border: none;
   border-radius: 2rem;
   transition: 0.2s;
@@ -217,7 +239,7 @@ body {
 
 @media only screen and (max-width: 60em) {
 
- 
+
 
   /* body {
     padding: 3rem;
@@ -233,9 +255,11 @@ body {
   background-color: #f1f1f1;
   padding: 20px 10px;
 }
+
 .title {
   text-align: center;
 }
+
 .subtitle {
   text-align: center;
 }
