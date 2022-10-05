@@ -5,6 +5,7 @@ var moon=document.getElementById("moon");
 var sun=document.getElementById("sun");
 var nav=document.getElementById("nav");
 var body=document.getElementById("body");
+var logo=document.getElementById("logo")
 
 dark.addEventListener('click',handleCLick)
 
@@ -14,13 +15,15 @@ function handleCLick(){
         moon.style.visibility="hidden";
         sun.style.visibility="visible";
         dark.style.backgroundColor="white";
-       
-        body.style.backgroundColor="#414758"
+       logo.style.color="white";
+        body.style.backgroundColor="rgb(40, 46, 65)"
         nav.style.backgroundColor="#28292e"
         // console.log(nav);
     }
     else{
+
         darkMode=false;
+        logo.style.color="black";
         dark.style.backgroundColor="#2e2f30";
         body.style.backgroundColor="#eee"
         sun.style.visibility="hidden";

@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-/* 
-* {
+*{
   margin: 0;
   padding: 0;
 
   box-sizing: border-box;
 }
 
-} */
+
 
 
 html {
@@ -18,8 +17,7 @@ html {
 body {
   background-color: rgb(238, 238, 238);
   font-family: "Poppins", sans-serif;
-  justify-content: center;
-  align-items: center;
+ 
   /* min-height: 100vh; */
   overflow-x: hidden;
 }
@@ -85,7 +83,7 @@ body {
   font-size: 15px;
 }
 .light-text{
-  margin-left: 11px;
+  margin-left: 13px;
   font-size: 15px;
   color: #0d0d0d;
 
@@ -97,7 +95,9 @@ body {
 .light-mode{
   width: 100%;
   height: 100%;
-  margin-left: 15px;
+  margin-left: 18px;
+  
+  
 }
 .logo{
   margin-left: 20px;
@@ -106,42 +106,54 @@ body {
 }
 .header{
   margin-top:10em;
-
-.header {
-  margin-top: 10em;
-
 }
+
+
 .main{
   margin-top: 100px;
 }
 .grid {
   display: flex;
-  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: #2e2f30; */
+  width: 100%;
+  flex-flow: wrap;
 }
 
 .grid-item {
-  display: flex;
-  flex: 0 0 30.333%;
-  padding: 20px;
+  /* background-color: aqua; */
+  width: 400px;
+  /* background-color: #2e2f30; */
+  margin-left: -30px;
+  margin: 20px;
+  /* padding-left: 20px; */
+  padding-bottom: 30px;
 }
-
-.card-img {
-  display: block;
+.img-cont{
   width: 100%;
-  height: 20rem;
-  object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  height: 200px;
+}
+.card-img {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  /* width: 100%;
+  height: 20rem; */
+  /* object-fit: cover; */
+  border-radius: 1rem;
   overflow: hidden;
 }
 
 .card {
+  width: 100%;
+  height:500px;
   border-radius: 1rem;
   transition: 0.2s;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #fff;
-  flex: 0 0 100%;
+  /* flex: 0 0 100%; */
   /* height: 100%; */
 }
 .card:hover {
@@ -172,6 +184,8 @@ body {
 .card-text {
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
+  width: 100%;
+
   line-height: 1.7;
   color: #3d3d3d;
   margin-bottom: 2.5rem;
@@ -198,10 +212,10 @@ body {
   cursor: pointer;
   letter-spacing: 0.1rem;
   margin-top: auto;
-}
+} 
 
 .card-btn span {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   transition: 0.2s;
 }
 
@@ -215,7 +229,7 @@ body {
   margin-left: 1.5rem;
 }
 
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 960px) {
 
  
 
@@ -224,7 +238,9 @@ body {
   } */
 
   .grid-item {
-    flex: 100%;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 150px;
   }
 }
 
