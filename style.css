@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
-*{
-
 
 * {
 
@@ -9,11 +7,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
-
-
-
 
 html {
   font-size: 62.5%;
@@ -37,24 +30,17 @@ body {
   /* position: sticky; */
   /* top: 0; */
   /* z-index: 10; */
-  box-shadow: 0px 0px 5px rgb(185, 185, 185);
+  box-shadow: 0px 0px 10px 0px;
 
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 
-.sticky+.container {
-  padding-top: 60px;
-}
 
-/* 
+
+
 .leftNav {
   flex: 1;
-
+  font-size: 15px;
 }
 
 .right {
@@ -62,13 +48,13 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-} */
+} 
 
 .box {
   width: 10rem;
   background-color: #2e2f30;
   border-radius: 20px;
-  margin-right: 10rem;
+  margin-right: 30px;
   position: relative;
   cursor: pointer;
   box-shadow: 0px 0px 7px 1px;
@@ -103,11 +89,6 @@ body {
   line-height: 1.5rem;
 }
 
-.light-text{
-  margin-left: 13px;
-  font-size: 15px;
-
-
 .light-text {
   margin-left: 11px;
   font-size: 12px;
@@ -138,12 +119,9 @@ body {
 }
 
 
-.main{
 
 
-.header {
-  margin-top: 10em;
-}
+
 
 .container {
   display: flex;
@@ -163,18 +141,20 @@ body {
   justify-content: space-around;
   /* background-color: #2e2f30; */
   width: 100%;
-  flex-flow: wrap;
+  flex-wrap: wrap;
 
-  flex-flow: row wrap;
+  
   align-items: center;
   justify-content: center;
+  /* background-color: #c2cffc; */
 
 }
 
 .grid-item {
   /* background-color: aqua; */
+  height: 500px;
+  /* background-color: aqua; */
   width: 400px;
-  /* background-color: #2e2f30; */
   margin-left: -30px;
   margin: 20px;
   /* padding-left: 20px; */
@@ -188,14 +168,13 @@ body {
   /* display: block; */
   width: 100%;
 
-  height: 100%;
+
   /* width: 100%;
   height: 20rem; */
-  /* object-fit: cover; */
+  object-fit: cover;
   border-radius: 1rem;
 
   height: 20rem;
-  object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 
@@ -305,9 +284,9 @@ body {
   } */
 
   .grid-item {
-    width: 300px;
-    height: 400px;
-    margin-bottom: 150px;
+    width: 350px;
+    height: 550px;
+    margin-bottom: 80px;
   }
 }
 
