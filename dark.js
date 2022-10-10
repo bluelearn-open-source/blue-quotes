@@ -37,7 +37,7 @@ function handleCLick(){
     // console.log(darkMode);
 }
 
-let darkMode = false;
+// let darkMode = false;
 var dark = document.getElementById("dark");
 var moon = document.getElementById("moon");
 var sun = document.getElementById("sun");
