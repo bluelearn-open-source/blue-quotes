@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
   box-sizing: border-box;
 }
 
@@ -23,7 +23,8 @@ body {
   width: 100%;
   height: 75px;
   background-color: rgb(238, 238, 238);
-  display: flex;
+  display: in-line;
+  overflow: hidden;
   align-items: center;
   justify-content: space-between;
   /* position: sticky; */
