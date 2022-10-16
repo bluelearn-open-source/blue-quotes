@@ -1,19 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
-*{
-
-
 * {
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
-
-
-
 
 html {
   font-size: 62.5%;
@@ -22,7 +13,8 @@ html {
 body {
   background-color: #dcdee6;
   font-family: "Poppins", sans-serif;
- 
+  justify-content: center;
+  align-items: center;
   /* min-height: 100vh; */
   overflow-x: hidden;
 }
@@ -38,7 +30,6 @@ body {
   /* top: 0; */
   /* z-index: 10; */
   box-shadow: 0px 0px 5px rgb(185, 185, 185);
-
 }
 
 .sticky {
@@ -47,7 +38,7 @@ body {
   width: 100%;
 }
 
-.sticky+.container {
+.sticky + .container {
   padding-top: 60px;
 }
 
@@ -72,7 +63,6 @@ body {
   position: relative;
   cursor: pointer;
   box-shadow: 0px 0px 7px 1px;
-
 }
 
 .moon {
@@ -81,6 +71,7 @@ body {
   display: flex;
   align-items: center;
   color: white;
+  user-select: none;
   /* display: none; */
   /* visibility: hidden; */
   /* background-color: #0d0d0d; */
@@ -95,25 +86,22 @@ body {
   position: absolute;
   margin-top: -40px;
   visibility: hidden;
+  user-select: none;
 }
 
 .dark-text {
   margin-left: 8px;
   font-size: 12px;
   line-height: 1.5rem;
+  user-select: none;
 }
-
-.light-text{
-  margin-left: 13px;
-  font-size: 15px;
-
 
 .light-text {
   margin-left: 11px;
   font-size: 12px;
-
   color: #0d0d0d;
   line-height: 1.5rem;
+  user-select: none;
 }
 
 .dark-mode {
@@ -124,22 +112,12 @@ body {
 .light-mode {
   width: 100%;
   height: 100%;
-  margin-left: 18px;
-  
-  
+  margin-left: 15px;
 }
 
-.logo {
+#logo {
   margin-left: 9.5rem;
 }
-
-.header{
-  margin-top:10em;
-}
-
-
-.main{
-
 
 .header {
   margin-top: 10em;
@@ -152,72 +130,41 @@ body {
 }
 
 .main {
-
   margin-top: 100px;
 }
 
 .grid {
   display: flex;
-
-  align-items: center;
-  justify-content: space-around;
-  /* background-color: #2e2f30; */
-  width: 100%;
-  flex-flow: wrap;
-
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-
 }
 
 .grid-item {
-  /* background-color: aqua; */
-  width: 400px;
-  /* background-color: #2e2f30; */
-  margin-left: -30px;
-  margin: 20px;
-  /* padding-left: 20px; */
-  padding-bottom: 30px;
+  display: flex;
+  flex: 0 0 30.333%;
+  padding: 20px;
 }
-.img-cont{
-  width: 100%;
-  height: 200px;
-}
+
 .card-img {
-  /* display: block; */
+  display: block;
   width: 100%;
-
-  height: 100%;
-  /* width: 100%;
-  height: 20rem; */
-  /* object-fit: cover; */
-  border-radius: 1rem;
-
   height: 20rem;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-
   overflow: hidden;
 }
 
 .card {
-  width: 100%;
-  height:500px;
   border-radius: 1rem;
   transition: 0.2s;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   background-color: #fff;
-
-  /* flex: 0 0 100%; */
-  /* height: 100%; */
-
   flex: 0 0 100%;
   height: 100%;
   overflow: hidden;
-
 }
 
 .card:hover {
@@ -227,7 +174,7 @@ body {
 }
 
 .card-content {
-  padding: 3rem;
+  padding: 3rem; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -251,12 +198,6 @@ body {
 .card-text {
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
-
-  width: 100%;
-
-  line-height: 1.7;
-
-
   color: #3d3d3d;
 }
 
@@ -268,21 +209,23 @@ body {
   text-align: center;
   color: white;
   background: rgb(30, 76, 255);
-  background: linear-gradient(90deg,
-      rgba(30, 76, 255, 1) 0%,
-      rgba(179, 23, 240, 1) 25%,
-      rgba(17, 170, 255, 1) 82%,
-      rgba(0, 77, 238, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 76, 255, 1) 0%,
+    rgba(179, 23, 240, 1) 25%,
+    rgba(17, 170, 255, 1) 82%,
+    rgba(0, 77, 238, 1) 100%
+  );
   border: none;
   border-radius: 2rem;
   transition: 0.2s;
   cursor: pointer;
   letter-spacing: 0.1rem;
   margin-top: auto;
-} 
+}
 
 .card-btn span {
-  /* margin-left: 1rem; */
+  margin-left: 1rem;
   transition: 0.2s;
 }
 
@@ -296,18 +239,13 @@ body {
   margin-left: 1.5rem;
 }
 
-@media only screen and (max-width: 960px) {
-
-
-
+@media only screen and (max-width: 60em) {
   /* body {
     padding: 3rem;
   } */
 
   .grid-item {
-    width: 300px;
-    height: 400px;
-    margin-bottom: 150px;
+    flex: 100%;
   }
 }
 
