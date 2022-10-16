@@ -241,16 +241,6 @@ body {
   margin-left: 1.5rem;
 }
 
-@media only screen and (max-width: 60em) {
-  /* body {
-    padding: 3rem;
-  } */
-
-  .grid-item {
-    flex: 100%;
-  }
-}
-
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
@@ -263,4 +253,22 @@ body {
 
 .subtitle {
   text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 60em) {
+  /* body {
+    padding: 3rem;
+  } */
+
+  .grid-item {
+    flex: 100%;
+  }
 }
