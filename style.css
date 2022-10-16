@@ -76,7 +76,9 @@ body {
   /* visibility: hidden; */
   /* background-color: #0d0d0d; */
 }
-
+.right:active {
+  transform: scale(0.98);
+}
 .sun {
   width: 40px;
   height: 40px;
@@ -174,7 +176,7 @@ body {
 }
 
 .card-content {
-  padding: 3rem; 
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
