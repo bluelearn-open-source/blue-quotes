@@ -54,7 +54,7 @@ function handleCLick() {
     dark.style.backgroundColor = "white";
     body.style.backgroundColor = "rgb(40, 46, 65)"
     nav.style.backgroundColor = "#28292e"
-    logo.src = "/assets/blueQuote_dark.svg"
+    logo.src = "./assets/blueQuote_dark.svg"
   }
   else {
     darkMode = false;
@@ -63,7 +63,7 @@ function handleCLick() {
     sun.style.visibility = "hidden";
     moon.style.visibility = "visible";
     nav.style.backgroundColor = "#dcdee6";
-    logo.src = "/assets/blueQuote_light.svg"
+    logo.src = "./assets/blueQuote_light.svg"
     
   }
 }
