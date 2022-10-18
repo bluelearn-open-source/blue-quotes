@@ -11,12 +11,9 @@ html {
 }
 
 body {
-  background-color: #dcdee6;
-  font-family: "Poppins", sans-serif;
-  justify-content: center;
-  align-items: center;
-  /* min-height: 100vh; */
-  overflow-x: hidden;
+   margin:0;
+    padding:0;
+    background-color: #000;
 }
 
 .navbar {
@@ -126,9 +123,10 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 3rem;
+ position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
 
 .main {
@@ -172,7 +170,8 @@ body {
 .card:hover {
   transform: translateY(-0.5);
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+  box-shadow: 0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee,0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee;
+}
 }
 
 .card-content {
