@@ -1,16 +1,56 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
+
+
+.fix-box{
+  max-width: 500px;
+  margin: auto;
+  /* margin-left: 300px; */
+}
+.card-img{
+  height: auto;
+  width: 700px;
+  
+  border: solid;
+}
+.card-text{
+  text-align: center;
+
+}
+
+
+.grid-item{
+
+  margin-top: 30px;
+  /* border-bottom-style: solid; */
+  /* border-left: solid; */
+  /* border-right: solid; */
+
+ 
+}
+.card-header{
+  text-decoration: solid;
+  font-size: xx-large;
+
+}
+.card-text{
+  text-decoration: solid;
+  /* font-size: xx-large; */
+  font-size: large;
+  color: blue;
+}
+
+
+
 *{
 
 
-* {
+*{
 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
 
 
 
@@ -298,11 +338,6 @@ body {
 
 @media only screen and (max-width: 960px) {
 
-
-
-  /* body {
-    padding: 3rem;
-  } */
 
   .grid-item {
     width: 300px;
