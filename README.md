@@ -15,3 +15,6 @@ Step 8:- Yeah that's all you are done, go ahead and make your Pull Request, Yaya
 ```
 If you are already known to the opensource then you can go through the issues and start working on them
 You can also suggest some issues if you have, will be more than happy to assign it to you.
+
+You can join India's Largest Student Community https://bluelearn.in/discord. 
+Feel free to ask your doubts on the server.
