@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>blue-quotes</title>
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -22,8 +21,7 @@
        <a href="/contact1.html" target="_blank" >Contact us</a>
     </div>
     <div class="right">
-
-    
+      <button class="box" id="dark">
       <div class="box" id="dark">
         <div class="moon" id="moon">
           <img src="./assets/Moon.png" class="dark-mode" />
@@ -33,7 +31,7 @@
           <h4 class="light-text">Light Mode</h4>
           <img src="./assets/Sun.png" class="light-mode" />
         </div>
-      </div>
+      </button>
     </div>
   </div>
 
@@ -1062,7 +1060,6 @@
                                     </div>
                                  </div>                             
                                 </div>
-                                <!-- <script src="dark.js"></script> -->
       <div class="grid-item">
         <div class="card">
           <img class="card-img" src="https://www.adweek.com/wp-content/uploads/files/blogs/just-do-it-hed-2013.jpg"
@@ -1399,7 +1396,58 @@
       </div>
       <!--SachXD is amazing-->
 
-      <script src="dark .js"></script>
+      <script>
+        let darkMode=false;
+        var dark=document.getElementById("dark");
+        var moon=document.getElementById("moon");
+        var sun=document.getElementById("sun");
+        var nav=document.getElementById("nav");
+        var body=document.getElementById("body");
+        var logo=document.getElementById("logo");
+
+        dark.addEventListener('click',handleCLick);
+
+        function handleCLick(){
+            if(darkMode===false){
+                moon.style.visibility="hidden";
+                sun.style.visibility="visible";
+                dark.style.backgroundColor="white";
+                logo.style.color="white";
+                body.style.backgroundColor="rgb(40, 46, 65)";
+                nav.style.backgroundColor="#28292e";
+                darkMode=true;
+                // console.log(nav);
+            }
+            else{
+                logo.style.color="black";
+                dark.style.backgroundColor="#2e2f30";
+                body.style.backgroundColor="#eee"
+                sun.style.visibility="hidden";
+                moon.style.visibility="visible";
+                nav.style.backgroundColor="#dcdee6";
+                darkMode=false;
+            }
+            // console.log(darkMode);
+        }
+
+        //  Code for sticky navbar
+        window.onscroll = function () { myNav() };
+
+        var navbar = document.getElementById("nav");
+
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myNav() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+
+      <!-- <script src="dark .js"></script> -->
 
 </body>
 
