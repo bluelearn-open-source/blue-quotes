@@ -18,3 +18,8 @@ You can also suggest some issues if you have, will be more than happy to assign 
 
 You can join India's Largest Student Community https://bluelearn.in/discord. 
 Feel free to ask your doubts on the server.
+
+# Our Amazing Contributors🌟
+<a align="center" href="https://github.com/bluelearn-open-source/blue-quotes/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=bluelearn-open-source/blue-quotes&&max=817" />
+</a>
