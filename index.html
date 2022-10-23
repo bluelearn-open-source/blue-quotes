@@ -1283,7 +1283,7 @@
   </div>
 
   <script>
-    let darkMode = false;
+    let darkMode = true;
     var dark = document.getElementById("dark");
     var moon = document.getElementById("moon");
     var sun = document.getElementById("sun");
@@ -1295,22 +1295,22 @@
 
     function handleCLick() {
       if (darkMode === false) {
-        moon.style.visibility = "hidden";
-        sun.style.visibility = "visible";
-        dark.style.backgroundColor = "white";
-        logo.style.color = "white";
-        body.style.backgroundColor = "rgb(40, 46, 65)";
-        nav.style.backgroundColor = "#28292e";
+        logo.style.color = "black";
+        dark.style.backgroundColor = "#2e2f30";
+        body.style.backgroundColor = "rgb(192, 205, 255)"
+        sun.style.visibility = "hidden";
+        moon.style.visibility = "visible";
+        nav.style.backgroundColor = "#dcdee6";
         darkMode = true;
         // console.log(nav);
       }
       else {
-        logo.style.color = "black";
-        dark.style.backgroundColor = "#2e2f30";
-        body.style.backgroundColor = "#eee"
-        sun.style.visibility = "hidden";
-        moon.style.visibility = "visible";
-        nav.style.backgroundColor = "#dcdee6";
+        moon.style.visibility = "hidden";
+        sun.style.visibility = "visible";
+        dark.style.backgroundColor = "rgb(192, 205, 255)";
+        logo.style.color = "rgb(192, 205, 255)";
+        body.style.backgroundColor = "rgb(40, 46, 65)";
+        nav.style.backgroundColor = "rgb(76, 83, 112)";
         darkMode = false;
       }
       // console.log(darkMode);
