@@ -208,9 +208,10 @@ a:hover{
 }
 
 .card-content h3 {
-  margin-top: -10px;
+  padding: 1rem;
+  /* margin-top: -10px; */
   text-align: right;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   user-select: none;
 }
 
